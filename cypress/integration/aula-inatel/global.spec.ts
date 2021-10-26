@@ -1,4 +1,4 @@
-import cypress from "cypress";
+// import cypress from "cypress";
 
 describe("Suite de testes: Testaras funcionalidades do site globalsqa", () => {
   it.skip("Cenario de testes: Registrar um usuario com secesso", () => {
