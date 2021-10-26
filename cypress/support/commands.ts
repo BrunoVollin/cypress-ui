@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+import { User } from "../../Interfaces";
+
+Cypress.Commands.add("login", (user: string, password: string) => {
+  cy.get("#username").type(user);
+  cy.get("#password").type(password);
+  cy.get(".btn-primary").click();
+  cy.get("h1.ng-binding").should("contain.text", user);
+});
