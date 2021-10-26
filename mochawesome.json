@@ -1,0 +1,200 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-26T21:55:30.269Z",
+    "end": "2021-10-26T21:56:32.190Z",
+    "duration": 58500,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "897e610d-7977-4328-a336-c9ee8458d5d0",
+      "title": "",
+      "fullFile": "cypress/integration/pomofocus.io/global.spec.ts",
+      "file": "cypress/integration/pomofocus.io/global.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "361965b4-a30f-4121-a6a0-0edcf488c0d1",
+          "title": "Suite de testes: Testar as funcionalidades do site pomofocus.io",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Cenario de testes: background-color muda para a cor rgb(76, 145, 149) quando clicar em short breack ",
+              "fullTitle": "Suite de testes: Testar as funcionalidades do site pomofocus.io Cenario de testes: background-color muda para a cor rgb(76, 145, 149) quando clicar em short breack ",
+              "timedOut": null,
+              "duration": 9548,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://pomofocus.io/\");\ncy.wait(2000);\ncy.get(\".sc-dEoRIm\").click();\ncy.wait(2000);\ncy.get(\".sc-kkGfuU\")\n    .should(\"have.css\", \"background-color\")\n    .and(\"eq\", \"rgb(76, 145, 149)\");",
+              "err": {},
+              "uuid": "2099fa3a-87e8-4e26-9156-2c10ee2dcfa8",
+              "parentUUID": "361965b4-a30f-4121-a6a0-0edcf488c0d1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenario de testes: Quando clicar em Long breack o tempo deve ser de 15 minutos ",
+              "fullTitle": "Suite de testes: Testar as funcionalidades do site pomofocus.io Cenario de testes: Quando clicar em Long breack o tempo deve ser de 15 minutos ",
+              "timedOut": null,
+              "duration": 8905,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://pomofocus.io/\");\ncy.wait(2000);\ncy.get(\".sc-jtggT\").click();\ncy.wait(2000);\ncy.get(\"#timer-string\").should(\"contain.text\", \"15:00\");",
+              "err": {},
+              "uuid": "31484681-1111-47e4-9864-bf187fe113f5",
+              "parentUUID": "361965b4-a30f-4121-a6a0-0edcf488c0d1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenario de testes: Quando clicar em start o tempo deve diminuir",
+              "fullTitle": "Suite de testes: Testar as funcionalidades do site pomofocus.io Cenario de testes: Quando clicar em start o tempo deve diminuir",
+              "timedOut": null,
+              "duration": 7483,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://pomofocus.io/\");\ncy.wait(2000);\ncy.get(\".sc-LKuAh > .sc-bdVaJa\").click();\ncy.wait(2000);\ncy.get(\"#timer-string\")\n    .invoke(\"text\")\n    .then(parseFloat)\n    .should(\"be.below\", 25);",
+              "err": {},
+              "uuid": "1935c578-cfca-4b0f-9545-1a14201a62ea",
+              "parentUUID": "361965b4-a30f-4121-a6a0-0edcf488c0d1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenario de testes: Mudar tempo do break para 4 minutos no menu de configuração",
+              "fullTitle": "Suite de testes: Testar as funcionalidades do site pomofocus.io Cenario de testes: Mudar tempo do break para 4 minutos no menu de configuração",
+              "timedOut": null,
+              "duration": 12397,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://pomofocus.io/\");\ncy.wait(2000);\ncy.get(\".sc-kpOJdX > :nth-child(2)\").click();\ncy.wait(2000);\ncy.get(\".sc-caSCKo > :nth-child(2) > .sc-iAyFgw\").clear().type(\"4\");\ncy.get(\".sc-fBuWsC > .sc-bxivhb\").click();\ncy.wait(2000);\ncy.get(\".sc-dEoRIm\").click();\ncy.wait(2000);\ncy.get(\"#timer-string\").should(\"contain.text\", \"4:00\");",
+              "err": {},
+              "uuid": "ad12bfa9-0a92-47f9-8633-7eb55dbadd95",
+              "parentUUID": "361965b4-a30f-4121-a6a0-0edcf488c0d1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenario de testes: Adicionando Task",
+              "fullTitle": "Suite de testes: Testar as funcionalidades do site pomofocus.io Cenario de testes: Adicionando Task",
+              "timedOut": null,
+              "duration": 10248,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var taskName = \"Eae Chis, tudo bom?\";\ncy.visit(\"https://pomofocus.io/\");\ncy.get(\".sc-esOvli\").click();\ncy.wait(2000);\ncy.get(\"#input_activity_title\").type(taskName);\ncy.get(\".sc-kIPQKe\").click();\ncy.wait(2000);\ncy.get(\":nth-child(1) > .sc-CtfFt\")\n    .invoke(\"text\")\n    .then(parseFloat)\n    .should(\"be.greaterThan\", 0);",
+              "err": {},
+              "uuid": "a17bddda-68c5-46a4-9c71-c7c510c985f2",
+              "parentUUID": "361965b4-a30f-4121-a6a0-0edcf488c0d1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Cenario de testes: Não deve ser possivel setar pomodoros negativos",
+              "fullTitle": "Suite de testes: Testar as funcionalidades do site pomofocus.io Cenario de testes: Não deve ser possivel setar pomodoros negativos",
+              "timedOut": null,
+              "duration": 9919,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var taskName = \"Eae Chis, tudo bom?\";\ncy.visit(\"https://pomofocus.io/\");\ncy.wait(2000);\ncy.get(\".sc-esOvli\").click();\ncy.wait(2000);\ncy.get('.sc-dfVpRl > :nth-child(4)').click();\ncy.wait(2000);\ncy.get('.sc-dfVpRl > :nth-child(4)').click();\ncy.get('#input_est_pomodoro').should(\"contain.value\", 0);",
+              "err": {},
+              "uuid": "e8bb6e95-d80f-4c06-8e7b-458ba428af62",
+              "parentUUID": "361965b4-a30f-4121-a6a0-0edcf488c0d1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2099fa3a-87e8-4e26-9156-2c10ee2dcfa8",
+            "31484681-1111-47e4-9864-bf187fe113f5",
+            "1935c578-cfca-4b0f-9545-1a14201a62ea",
+            "ad12bfa9-0a92-47f9-8633-7eb55dbadd95",
+            "a17bddda-68c5-46a4-9c71-c7c510c985f2",
+            "e8bb6e95-d80f-4c06-8e7b-458ba428af62"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 58500,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
