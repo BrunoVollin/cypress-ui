@@ -1,7 +1,14 @@
 #  Teste das funcionalidades do site **pomofocus.io**
 
 ### Bruno Almeida Vasconcelos GES-31
+## Instalando módulos 👾
+```bash
+    # Com yarn
+    yarn install 
 
+    # Com npm
+    npm i 
+```
 ## Executando os testes 🚀
 ### yarn 
 ```bash
